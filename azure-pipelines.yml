@@ -18,7 +18,7 @@ steps:
   inputs:
     script: |
       echo Replace Index.html
-      pushd $(uiSource)/public
+      pushd $(uiSource)
       mv index.release.html index.html
       popd
 - task: NodeTool@0
